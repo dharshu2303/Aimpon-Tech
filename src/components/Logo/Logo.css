@@ -1,0 +1,21 @@
+/* ===== FIXED LEFT CORNER LOGO ===== */
+.corner-logo {
+  position: fixed;
+  top: 2rem;
+  left: 2.5rem;
+  z-index: 50;
+  transition: filter 0.3s ease;
+}
+
+.logo-image {
+  width: 150px;
+  height: 130px;
+  display: block;
+  filter: drop-shadow(0 0 18px #fff);
+}
+
+.corner-logo svg {
+  width: 150px;
+  height: 130px;
+  filter: drop-shadow(0 0 18px #fff);
+}

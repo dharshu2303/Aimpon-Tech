@@ -1,0 +1,110 @@
+/* ===== HERO SECTION ===== */
+.right-hero {
+  position: relative;
+  margin-top: 180px;
+  margin-left: 0;
+  width: 50vw;
+  max-width: 50vw;
+  float: left;
+  text-align: left;
+  z-index: 30;
+  background: none;
+  filter: none;
+  box-shadow: none;
+  border: none;
+  padding: 0 0 0 6rem;
+  user-select: none;
+}
+
+.right-hero h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(130deg, #ffffff, #b0dcff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+  text-shadow: 0 0 6px #3b82f6;
+}
+
+.tagline {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  color: #aad0ff;
+  text-shadow: 0 0 3px #1e90ff, 0 0 7px #0a4da4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 2rem;
+}
+
+.tagline span {
+  background: rgba(20, 70, 140, 0.4);
+  padding: 0.2rem 1.2rem 0.2rem 1.5rem;
+  border-radius: 100px;
+  border-left: 4px solid #3b82f6;
+  box-shadow: 0 0 5px #19487b;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #ccdfff;
+  margin: 1.8rem 0 2.2rem 0;
+  max-width: 900px;
+  padding-left: 2rem;
+  text-shadow: 0 0 2px #0b1f33;
+}
+
+.hero-description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.primary-cta {
+  background: rgba(0, 80, 160, 0.2);
+  border: 1.5px solid #3980ff;
+  padding: 0.9rem 2.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+  box-shadow: 0 0 8px #2563eb, 0 0 3px #3b82f6 inset;
+  margin: 0 0 0 1.5rem;
+  display: block;
+}
+
+.primary-cta:hover {
+  background: #2563eb;
+  box-shadow: 0 0 12px #1e4fd0, 0 0 7px #a0c8ff inset;
+  border-color: #9ac0ff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+  .right-hero {
+    right: 2rem;
+    max-width: 420px;
+    padding: 1.8rem;
+  }
+
+  .right-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+}

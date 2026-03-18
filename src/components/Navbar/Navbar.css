@@ -1,0 +1,88 @@
+/* ===== MIDDLE ICON BOX (nav pill) ===== */
+.mid-icon-box {
+  position: fixed;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10, 15, 25, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(50, 130, 220, 0.2);
+  border-radius: 60px;
+  padding: 0.9rem 2rem;
+  box-shadow:
+    0 8px 18px -8px rgba(0, 40, 80, 0.4),
+    0 0 0 1px rgba(70, 160, 255, 0.09) inset,
+    0 0 8px rgba(30, 150, 255, 0.09);
+  z-index: 40;
+  display: flex;
+  gap: 2.5rem;
+  transition: box-shadow 0.2s;
+  user-select: none;
+}
+
+.mid-icon-box a {
+  color: #b0cbff;
+  font-size: 1.5rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: transparent;
+  text-decoration: none;
+  position: relative;
+}
+
+/* icon hover effect: light blue glow + background */
+.mid-icon-box a:hover {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(40, 130, 255, 0.22) 0%, rgba(0, 212, 255, 0.18) 100%);
+  box-shadow:
+    0 0 18px 4px #3b82f6,
+    0 0 32px 8px #1e4b8f,
+    0 4px 24px 0 rgba(40, 130, 255, 0.18);
+  transform: scale(1.13) translateY(-4px) rotate(-3deg);
+  border: 1.5px solid #3b82f6;
+}
+
+/* tooltip label */
+.mid-icon-box a span {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background: #111927;
+  color: #b3d0ff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 30px;
+  border: 1px solid #2b4870;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 0 6px #2563eb;
+}
+
+.mid-icon-box a:hover span {
+  opacity: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+  .mid-icon-box {
+    gap: 1.5rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .mid-icon-box {
+    display: none;
+  }
+}

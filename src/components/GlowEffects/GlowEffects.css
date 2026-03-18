@@ -1,0 +1,21 @@
+/* ===== DECORATIVE GLOW ORBS ===== */
+.glow-orb {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  width: 350px;
+  height: 150px;
+  pointer-events: none;
+  z-index: 20;
+  border-radius: 50%;
+}
+
+.glow-orb--primary {
+  background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.08) 0%, transparent 70%);
+  filter: blur(20px);
+}
+
+.glow-orb--secondary {
+  background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.03) 0%, transparent 80%);
+  filter: blur(10px);
+}
